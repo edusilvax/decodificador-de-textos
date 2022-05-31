@@ -1,0 +1,140 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #E5E5E5;
+    
+}
+
+/*Remove traçado azul do input*/
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.logo{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+.logo-alura{
+    position: absolute;
+    top: 40px;
+    left: 36.67%;
+    right: 37.43%;
+}
+
+.caixa {
+    width: 1000px;
+    height: 800px;
+    position: relative;
+}
+.input-padrao{
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    background: #E5E5E5;
+    color: #0A3871;
+    left: 200px;
+    top: 70px;
+    
+}
+::-webkit-input-placeholder {
+    color: #0A3871;
+ }
+
+.input-decodificador{
+    position: absolute;
+    height: 660px;
+    width: 380px;
+    left: 1000px;
+    top: 40px;
+    border-radius: 32px;
+    border: none;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    padding: 15px;
+    /* or 29px */
+    
+    
+}
+
+.bt-criptografar{
+    position: absolute;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+    height: 67px;
+    width: 328px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    border-radius: 24px;
+    padding: 24px;
+    left: 20%;
+    top: 67%;
+}
+
+.bt-descriptografar{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    height: 67px;
+    width: 328px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    left: 54%;
+    top: 67%;
+
+}
+
+.bt-copiar{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    height: 67px;
+    width: 328px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    left: 1050px;
+    top: 638px;
+
+}
+
+.bt-criptografar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.bt-descriptografar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.bt-copiar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.rotape{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: #0A3871;
+}
