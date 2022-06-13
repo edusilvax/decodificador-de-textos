@@ -2,42 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador - Oracle One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Decodificador</title>
 </head>
 <body>
-    <header>
-        <div class="logo"> 
-            <img src="img/logo_alura.png" alt="Logo Alura" class="logo-alura">
-        </div>
-    </header>
     <main>
-        <section class="jogo">
-            <div class="caixa-tela">
-                <div class="resultado-decodificador">
-                    <label for="resultado-decodificacao"></label>
-                    <textarea style="resize: none" class="input-decodificador" readonly></textarea>
-                    <input type="submit" value="Copiar" id="bt-copiar" class="bt-copiar">
-                </div>
-
-                <label for="texto-decodificador"></label>
-                <input type="text" id="texto-decodificador" 
-                class="input-padrao" placeholder="Digite seu texto">
-                <input type="submit" value="Criptografar" class="bt-criptografar">
-                <input type="submit" value="Descriptografar" class="bt-descriptografar">
+        <div class="container">
+            <h1>Decodificador</h1>
+            <input type="text" class="input-text" placeholder="Digite seu texto">
+            <div class="alert">
+                <img src="./img/alert.svg" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
             </div>
-        </main>
-    </section>
+            <div class="btn-area">
+                <button class="btn-cript">Criptografar</button>
+                <button class="btn-decript">Descriptografar</button>
+            </div>
+            <textarea disabled class="input-result" none name="" id="" cols="30" rows="10"></textarea>
+            <button class="btn-copy" id="btn-copy">Copiar</button>
+        </div>
+    </main>
     <footer>
-        <div class="rotape">
-            <h2>Alura - Oracle Next Education by Edu Silva - 2022</h2>
+        <div class="container">
+            <p>Oracle Next Education by Edu Silva</p>
+            <div class="social">
+                <img src="./img/logotipo-do-github.svg" alt="">
+                <a href="">GitHub</a>
+                <img src="./img/bx_bxl-linkedin.svg" alt="">
+                <a href="">Linkedin</a>
+            </div>
         </div>
     </footer>
-    <script src="criptogafa.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

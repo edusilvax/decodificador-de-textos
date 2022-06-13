@@ -1,0 +1,33 @@
+@media(max-width: 480px){
+    footer .container {
+        flex-direction: column;
+        
+    }
+    footer .container p{
+        margin-right: 0;
+        margin-bottom: 2rem;
+        
+    }
+
+    footer .container .social img:first-child{
+        margin-left: 0;
+    }
+
+
+}
+
+@media(max-width: 320px){
+    h1 {
+        font-size: 4rem;
+    }
+    main .container .btn-cript{
+        max-width: 11.6rem;
+    }
+
+    main .container .btn-decript{
+        max-width: 14rem;
+    }
+    
+
+
+}

@@ -1,0 +1,172 @@
+.container{
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+	padding: 0 15px;
+}
+
+h1{ 
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
+    font-feature-settings: 'liga' off;
+    color:#fff
+}
+
+input {
+    max-width: 100%;
+    width: 500px;
+    height: 30px;
+    margin: 40px 0 10px 0;
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 3px;
+    padding-left: 1rem;
+}
+
+body{
+    background-color: #837979;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+main .alert {
+    display: flex;
+    margin-top: 1rem;
+}
+
+main .alert p{
+    display: flex;
+    margin-left: 0.8rem;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+main .input-result {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    background: #F2F1F1;
+    color: #495057;
+    font-size: 1.7rem;
+    border-radius: 25px;
+    padding: 1rem;
+    resize: none;
+}
+
+main .btn-area {
+    margin: 4.4rem 0 2rem 0;
+    width: 100%;
+    max-width: 315px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main .container .btn-cript{
+    width: 100%;
+    max-width: 134px;
+    height: 51px;
+    background-color: rgba(217, 217, 217, 0.904);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+main .container .btn-cript:hover {
+    transform:scale(1.03);
+    background: #d9d9d9;
+}
+
+main .container .btn-decript{
+    width: 100%;
+    max-width: 161px;
+    height: 51px;
+    color: #ffffff;
+    background: rgba(142, 142, 142, 0.897);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+main .container .btn-decript:hover {
+    transform:scale(1.03);
+    background: #8E8E8E;
+}
+
+main .container .btn-copy{
+    width: 100%;
+    max-width: 95px;
+    height: 35px;
+    background: rgba(217, 217, 217, 0.904);
+    border-radius: 10px;
+    margin:13px 0 17px 0;
+    transition: all 0.3s;
+}
+
+main .container .btn-copy:hover {
+    transform:scale(1.03);
+    background: #d9d9d9;
+}
+
+
+/*footer*/
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.3rem;
+    border-top: 1px #fff solid;
+    padding-top: 2.8rem;
+    
+    
+    
+}
+
+footer .container .social {
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+footer .container p{
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    line-height: 105%;
+    color: #FFFFFF;
+    
+}
+
+footer .container .social a{
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 105%;
+    color: rgb(255, 255, 255);
+}   
+
+footer .container .social a:hover{
+    color: rgb(202, 202, 202);
+}
+
+footer .container .social img{
+    margin-left: 4.5rem;
+}

@@ -1,15 +1,13 @@
-var campoTexto = document.querySelector('#texto-decodificador');
-var botaoCriptografa = document.querySelector('.bt-criptografar');
-var botaoDescriptografa = document.querySelector('.bt-descriptografar')
-var botaoCopiar = document.querySelector('.bt-copiar')
-
-
+var campoTexto = document.querySelector('.input-text');
+var botaoCriptografa = document.querySelector('.btn-cript');
+var botaoDescriptografa = document.querySelector('.btn-decript')
+var botaoCopiar = document.querySelector('.btn-copy')
 
 
 botaoCriptografa.addEventListener('click', function(){
     var textoDigitado = campoTexto.value;
     var textoCriptografado = criptografa(textoDigitado);
-    var areaTexto = document.querySelector('.input-decodificador')
+    var areaTexto = document.querySelector('.input-result')
     areaTexto.textContent = textoCriptografado
 
 })
@@ -17,33 +15,18 @@ botaoCriptografa.addEventListener('click', function(){
 botaoDescriptografa.addEventListener('click',function(){
     var textoDigitado = campoTexto.value;
     var textoDescriptografado = decriptografa(textoDigitado);
-    var areaTexto = document.querySelector('.input-decodificador')
+    var areaTexto = document.querySelector('.input-result')
     areaTexto.textContent = textoDescriptografado
 
 
 })
 
-botaoCopiar.addEventListener('click',function(){
-    copiarTexto();
-    
-})
+botaoCopiar.addEventListener('click', async function () {
+    let text = document.querySelector(".input-result").value;
+    await navigator.clipboard.writeText(text);
+  });
 
 
-document.getElementById('bt-copiar').addEventListener('click', clipboardCopy);
-
-async function clipboardCopy() {
-  let text = document.querySelector(".input-decodificador").value;
-  await navigator.clipboard.writeText(text);
-}
-
-
-function copiarTexto() {
-    var areaTexto = document.querySelector('.input-decodificador')
-    let textoCopiado = areaTexto.textContent
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-}
 
 function criptografa(texto){
     var resultado = texto.replace(/e/gi, 'enter') 
